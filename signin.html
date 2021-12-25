@@ -12,83 +12,108 @@
     <title>Form Đăng Ký</title>
 </head>
 <body>
-<div class="header boxcenter">
-    <div class="header--contact padding-content">
-        <div class="header--contact__phone">
-            <i class="fas fa-phone-alt " style="font-size: 16px;"></i>
-            call us 03-087-0976
-            <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
-            nn@gmail.com
-        </div>
+    <div id="showcart" style="margin-top: 400px;margin-right: 200px;z-index: 99;"> 
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+                <th>Xoa</th>
+            </tr>
+            <tbody id="myCart">
 
-        <div class="header--contact__">
-            <a href="">
-                <div class="header--contact__about" >
-                    <a href="" style="margin-right: 6px"><i class="fas fa-user" style="font-size: 16px;"></i></a>
-                    <a href="about.html" class="header--contact__span" style="position: relative; top:0px;"> My Account</a>
-                </div>
-            </a>
-            <a href="">
-                <div class="header--contact__careers">
-                    <i class="fas fa-file-alt" style="font-size: 16px;margin-right: 6px;"></i>
-                    <span style="position: relative; top:0px;">Orders</span>
-                </div>
-            </a>
-            <a class="header--contact__locations"
-               href="">
-                <!-- <i class="fas fa-globe-americas" style="font-size: 16px;"></i> -->
-                <img src="assets/icon/location.png" style="height: 20px; width: 20px;"  alt="">
-                <span style="position: relative; top: 1px;margin-left: 10px;">
-                            <a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268">Location</a>
-                        </span>
-            </a>
-
-        </div>
+            </tbody>
+        </table>
+        <a  href="cart.html" style="text-decoration: none;margin-left: 180px;">Thanh toán >>></a>
+        <button onclick="xoatatca()" style="border-radius: 5px;float: right; margin: 20px;">Xóa all</button>
     </div>
-
-    <div class="header--logo content-header">
-        <div class="header--logo_large">
-            <div class="header--logo_item">
-                <a href="">
-
-                    <i class='bx bx-notepad' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
-                </a>
+    <div class="search_cake undisplay">
+       
+        <input 
+            type="text" id="search_cake_query" placeholder="Enter name of cake !">
+    </div>
+  
+        <div class="header boxcenter">
+            <div class="header--contact padding-content">
+                <div class="header--contact__phone">
+                   
+                    <i class='bx bx-phone-call'style="font-size: 20px;"></i>
+                    call us 03-087-0976
+                    <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
+                    nn@gmail.com
+                </div>
+               
+                <div class="header--contact__">
+                    <a href="">
+                        <div class="header--contact__about" >
+                        <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+                           <a href="dangnhap.html" class="header--contact__span" style="position: relative; top:5px;"> My Account</a>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="header--contact__careers">
+                            <i class='bx bxs-note' style="font-size: 20px;"></i>
+                            <span style="position: relative; top:-3px;margin-left: 10px;">Orders</span>
+                        </div>
+                    </a>
+                    <a class="header--contact__locations"
+                       href="">
+                       <!-- <i class="fas fa-globe-americas" style="font-size: 16px;"></i> -->
+                       <img src="assets/icon/location.png" style="height: 20px; width: 20px;"  alt="">
+                        <a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268" style="position: relative; top: 1px;margin-left: 10px;">
+                            location
+                        </a>
+                    </a>
+                    
+                </div>
             </div>
-            <div class="header--logo_item">
-                <a href="">
-
-                    <i class='bx bx-globe' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
-                </a>
-            </div>
-            <div class="header--logo_logo">
-                <!-- TODO : link -->
-                <a href="">
-                    <img src="assets/logo-dark.png" alt="">
-                </a>
-
-            </div>
-            <div class="header--logo_item">
-                <a id="search_icon_button">
-
-                    <i class='bx bx-search-alt-2'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
-                </a>
-            </div>
-            <div class="giohang header--logo_item" >
-                <!-- <a href="cart/cart.html"><img src="cart/images/cart.png"></a> -->
-                <a onclick="showcart()">
-
-                    <i class='bx bxs-cart-alt'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
-                    <span id="countsp">0</span>
-                </a>
-            </div>
-        </div>
-        <div class="header--logo_small">
-            <a href="">
-                <!-- TODO : link -->
-                <img src="assets/logo-left-2.png" alt="">
-            </a>
-            <button class="header--button header--navbar_open_icon">
-                <svg width="25px" class="svg-menu-opener" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 26.5" style="enable-background:new 0 0 32 26.5;" xml:space="preserve">
+                    
+            <div class="header--logo content-header">
+                <div class="header--logo_large">
+                    <div class="header--logo_item">
+                        <a href="">
+                            
+                            <i class='bx bx-notepad' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                        </a>
+                    </div>
+                    <div class="header--logo_item">
+                        <a href="">
+                            
+                            <i class='bx bx-globe' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                        </a>
+                    </div>
+                    <div class="header--logo_logo">
+                        <!-- TODO : link -->
+                        <a href="">
+                            <img src="assets/logo-dark.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="header--logo_item">
+                        <a id="search_icon_button">
+                            
+                            <i class='bx bx-search-alt-2'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
+                        </a>
+                    </div>
+                    <div class="giohang header--logo_item" >
+                        <!-- <a href="cart/cart.html"><img src="cart/images/cart.png"></a> -->
+                        <a onclick="showcart()">
+                           
+                            <i class='bx bxs-cart-alt'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
+                            <span id="countsp">0</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header--logo_small">
+                    <a href="">
+                        <!-- TODO : link -->
+                        <img src="assets/logo-left-2.png" alt="">
+                    </a>
+                    <button class="header--button header--navbar_open_icon">
+                        <svg width="25px" class="svg-menu-opener" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 26.5" style="enable-background:new 0 0 32 26.5;" xml:space="preserve">
                             <path class="st0" d="M31.3,0.8c1.2,1.4-0.4,3.5,0.1,5.5c-0.6,0.2-1,0.5-1.9,0.4c-0.2,0-0.7,0-1-0.1c0,0-0.1-0.1-0.1-0.1
                                 c-0.4-0.1-0.9,0.1-1.4,0.1c-0.7,0-1.4-0.3-2.2-0.4c-0.3,0-0.7,0.1-1,0.1c-0.4,0-0.9-0.2-1.3-0.2c-0.5,0-1,0-1.5,0
                                 C16.1,5.8,10.2,6.2,5.8,6.2c-0.7,0-1.4,0-2.2,0.1C2,6.4,0.9,6.3,0,5.7C0.2,4.6,0.5,3,0,1.6c0.4-0.4,1-0.5,1.8-0.7
@@ -104,7 +129,7 @@
                                 C25.2,3,25,3.6,24.8,4.2z M4,4.6c0.7-0.2,0.6-1,1.3-1.2c-0.1-0.3,0.3-0.5,0-0.7C4.9,3.3,4.5,3.9,4,4.6z M7.6,3.2
                                 c0.1,0,0.2-0.3,0-0.4C7.7,3,7.3,3.2,7.6,3.2z M22.3,3.6C22,3.9,22.5,4,22.3,3.6L22.3,3.6z M6.6,4.6c-0.1-0.1,0.3-0.2,0-0.3
                                 C6.6,4.3,6.3,4.5,6.6,4.6z M22.3,4.3c-0.1,0-0.1-0.1-0.3-0.1C21.8,4.4,22.3,4.5,22.3,4.3z"></path>
-                    <path class="st0" d="M31,9.6c1.1,0.3,0.5,1.4,0.5,2c0,0.2,0.2,0.4,0.2,0.7c0,0.4-0.1,0.9-0.1,1.4c0,0.7,0.2,1.2,0,1.8
+                            <path class="st0" d="M31,9.6c1.1,0.3,0.5,1.4,0.5,2c0,0.2,0.2,0.4,0.2,0.7c0,0.4-0.1,0.9-0.1,1.4c0,0.7,0.2,1.2,0,1.8
                                 c-0.9,0.4-2,0.2-3.1,0.2c-0.3,0-0.5,0.1-0.9,0.1C26.2,16,24.4,15.7,23,16c-2.2-0.3-4.5,0.1-6.7-0.1c-0.5,0-1-0.2-1.9-0.2
                                 c-0.6,0-1.2-0.2-1.7-0.1c-0.2,0-0.4,0-0.5,0c0,0-0.2,0.1-0.2,0.1c-0.2,0-0.5-0.2-0.7-0.2c-0.3,0-0.6,0-1,0c-0.3,0-0.5-0.1-0.7-0.1
                                 c-0.3,0-0.6,0.2-1,0.1c-0.3,0-0.6-0.1-0.9-0.1c-1.1,0-2.4,0.1-3.7,0.1c-0.8,0-1.6,0-2.3,0.2c-0.7-0.2-1.1-0.6-1.6-0.9
@@ -120,7 +145,7 @@
                                 c0.3,0.1,0.3-0.3,0.1-0.3C22.2,13.4,22.1,13.4,22.2,13.6z M13.8,14.1c-0.1-0.3,0.3-0.3,0.3-0.6c-0.1,0-0.1-0.1-0.2-0.1
                                 C13.8,13.5,13.3,13.9,13.8,14.1z M8.2,13.9c0-0.1,0.3,0,0.3-0.1c-0.2,0-0.1-0.2-0.3-0.2C8.3,13.8,7.9,13.9,8.2,13.9z M28.2,14.2
                                 c0.3,0,0.5,0,0.7-0.1c-0.1-0.2,0.2-0.6-0.2-0.5C28.6,13.9,28.3,14,28.2,14.2z"></path>
-                    <path class="st0" d="M11.5,19c4.4,0,9.7,0.3,14,0.8c1.9-0.1,3.3-0.2,5.2-0.3c0.3,0.1,0.5,0.4,0.7,0.6c-0.7,1.9,0.2,4-0.1,5.7
+                            <path class="st0" d="M11.5,19c4.4,0,9.7,0.3,14,0.8c1.9-0.1,3.3-0.2,5.2-0.3c0.3,0.1,0.5,0.4,0.7,0.6c-0.7,1.9,0.2,4-0.1,5.7
                                 c-0.5,0.1-0.9,0.2-1.2,0.4c-0.5,0-1-0.2-1.5-0.2c-0.5,0-1,0.2-1.6,0.2c-1.2,0.1-2.7-0.1-4.2,0.1c-0.4,0-0.9,0-1.3,0.1
                                 c0,0-0.2,0.1-0.2,0.1c-3.4,0.1-7.4-0.3-10.8-0.4c-1.2,0-2.5,0-3.5,0.1c-0.8,0.1-1.6,0-2.3,0c-0.3,0-0.6,0.2-1,0.2
                                 c-0.4,0-0.8-0.1-1.2-0.1c-0.5,0-0.7,0.3-1.2,0.2C1,26.5,0.7,26,0.2,25.9c-0.1-2.1,0.4-3.7,0.4-6c0.4-0.1,0.6-0.4,1.2-0.4
@@ -138,13 +163,13 @@
                                 c-0.2-0.1-0.3-0.2-0.6-0.1C24.5,24.8,25,24.7,25.2,24.5z M18.7,24.5c-0.5,0.1-1.4,0-1.6,0.4c0.9-0.1,2,0,3-0.1
                                 C19.5,24.7,19.1,24.6,18.7,24.5z"></path>
                         </svg>
-            </button>
-        </div>
-    </div>
-
-    <div class="header--navbar margin-content">
-        <button class="header--button header--navbar_close_icon">
-            <svg width="25px" class="svg-menu-opener" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 26.5" style="enable-background:new 0 0 32 26.5;" xml:space="preserve">
+                    </button>
+                </div>
+            </div>
+                            
+            <div class="header--navbar margin-content">
+                <button class="header--button header--navbar_close_icon">
+                    <svg width="25px" class="svg-menu-opener" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 26.5" style="enable-background:new 0 0 32 26.5;" xml:space="preserve">
                         <path class="st0" d="M31.3,0.8c1.2,1.4-0.4,3.5,0.1,5.5c-0.6,0.2-1,0.5-1.9,0.4c-0.2,0-0.7,0-1-0.1c0,0-0.1-0.1-0.1-0.1
                             c-0.4-0.1-0.9,0.1-1.4,0.1c-0.7,0-1.4-0.3-2.2-0.4c-0.3,0-0.7,0.1-1,0.1c-0.4,0-0.9-0.2-1.3-0.2c-0.5,0-1,0-1.5,0
                             C16.1,5.8,10.2,6.2,5.8,6.2c-0.7,0-1.4,0-2.2,0.1C2,6.4,0.9,6.3,0,5.7C0.2,4.6,0.5,3,0,1.6c0.4-0.4,1-0.5,1.8-0.7
@@ -160,7 +185,7 @@
                             C25.2,3,25,3.6,24.8,4.2z M4,4.6c0.7-0.2,0.6-1,1.3-1.2c-0.1-0.3,0.3-0.5,0-0.7C4.9,3.3,4.5,3.9,4,4.6z M7.6,3.2
                             c0.1,0,0.2-0.3,0-0.4C7.7,3,7.3,3.2,7.6,3.2z M22.3,3.6C22,3.9,22.5,4,22.3,3.6L22.3,3.6z M6.6,4.6c-0.1-0.1,0.3-0.2,0-0.3
                             C6.6,4.3,6.3,4.5,6.6,4.6z M22.3,4.3c-0.1,0-0.1-0.1-0.3-0.1C21.8,4.4,22.3,4.5,22.3,4.3z"></path>
-                <path class="st0" d="M31,9.6c1.1,0.3,0.5,1.4,0.5,2c0,0.2,0.2,0.4,0.2,0.7c0,0.4-0.1,0.9-0.1,1.4c0,0.7,0.2,1.2,0,1.8
+                        <path class="st0" d="M31,9.6c1.1,0.3,0.5,1.4,0.5,2c0,0.2,0.2,0.4,0.2,0.7c0,0.4-0.1,0.9-0.1,1.4c0,0.7,0.2,1.2,0,1.8
                             c-0.9,0.4-2,0.2-3.1,0.2c-0.3,0-0.5,0.1-0.9,0.1C26.2,16,24.4,15.7,23,16c-2.2-0.3-4.5,0.1-6.7-0.1c-0.5,0-1-0.2-1.9-0.2
                             c-0.6,0-1.2-0.2-1.7-0.1c-0.2,0-0.4,0-0.5,0c0,0-0.2,0.1-0.2,0.1c-0.2,0-0.5-0.2-0.7-0.2c-0.3,0-0.6,0-1,0c-0.3,0-0.5-0.1-0.7-0.1
                             c-0.3,0-0.6,0.2-1,0.1c-0.3,0-0.6-0.1-0.9-0.1c-1.1,0-2.4,0.1-3.7,0.1c-0.8,0-1.6,0-2.3,0.2c-0.7-0.2-1.1-0.6-1.6-0.9
@@ -176,7 +201,7 @@
                             c0.3,0.1,0.3-0.3,0.1-0.3C22.2,13.4,22.1,13.4,22.2,13.6z M13.8,14.1c-0.1-0.3,0.3-0.3,0.3-0.6c-0.1,0-0.1-0.1-0.2-0.1
                             C13.8,13.5,13.3,13.9,13.8,14.1z M8.2,13.9c0-0.1,0.3,0,0.3-0.1c-0.2,0-0.1-0.2-0.3-0.2C8.3,13.8,7.9,13.9,8.2,13.9z M28.2,14.2
                             c0.3,0,0.5,0,0.7-0.1c-0.1-0.2,0.2-0.6-0.2-0.5C28.6,13.9,28.3,14,28.2,14.2z"></path>
-                <path class="st0" d="M11.5,19c4.4,0,9.7,0.3,14,0.8c1.9-0.1,3.3-0.2,5.2-0.3c0.3,0.1,0.5,0.4,0.7,0.6c-0.7,1.9,0.2,4-0.1,5.7
+                        <path class="st0" d="M11.5,19c4.4,0,9.7,0.3,14,0.8c1.9-0.1,3.3-0.2,5.2-0.3c0.3,0.1,0.5,0.4,0.7,0.6c-0.7,1.9,0.2,4-0.1,5.7
                             c-0.5,0.1-0.9,0.2-1.2,0.4c-0.5,0-1-0.2-1.5-0.2c-0.5,0-1,0.2-1.6,0.2c-1.2,0.1-2.7-0.1-4.2,0.1c-0.4,0-0.9,0-1.3,0.1
                             c0,0-0.2,0.1-0.2,0.1c-3.4,0.1-7.4-0.3-10.8-0.4c-1.2,0-2.5,0-3.5,0.1c-0.8,0.1-1.6,0-2.3,0c-0.3,0-0.6,0.2-1,0.2
                             c-0.4,0-0.8-0.1-1.2-0.1c-0.5,0-0.7,0.3-1.2,0.2C1,26.5,0.7,26,0.2,25.9c-0.1-2.1,0.4-3.7,0.4-6c0.4-0.1,0.6-0.4,1.2-0.4
@@ -194,39 +219,67 @@
                             c-0.2-0.1-0.3-0.2-0.6-0.1C24.5,24.8,25,24.7,25.2,24.5z M18.7,24.5c-0.5,0.1-1.4,0-1.6,0.4c0.9-0.1,2,0,3-0.1
                             C19.5,24.7,19.1,24.6,18.7,24.5z"></path>
                     </svg>
-        </button>
+                </button>
+                <!-- <div class="header--navbar_item"><a href="">home</a></div>
+                <div class="header--navbar_item"><a href="">blog</a></div>
+                <div class="header--navbar_item"><a href="#foos">portfolio</a></div>
+                <div class="header--navbar_item"><a href="">shop</a></div> -->
+                <!-- <div class="container1 header--navbar_item ">
+                    <section></section>
+                    <nav>
+                        <ul>
+                            <li>HOME</li>
+                            <li>PRODUCT
+                                <ul>
+                                    <li>tivi</li>
+                                    <li>điện thoại</li>
+                                </ul>
+                            </li>
+                            <li>ABOUT US</li>
+                            <li>shop
+                                <ul>
+                                    <li>tivi</li>
+                                    <li>điện thoại</li>
+                                </ul>
+                            </li>
+                            
+                            <li>CONTACT</li>
+                        </ul>
+            
+                    </nav>
+                </div> -->
+                <div class="wrapper header--navbar_item">
+                    <div class="header1">
+                        <nav class="container1">
+                            <a href="" id="logo">
+                                <img src="" alt="">
+                            </a>
+                            <ul id="main-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
 
-        <div class="wrapper header--navbar_item">
-            <div class="header1">
-                <nav class="container1">
-                    <a href="" id="logo">
-                        <img src="" alt="">
-                    </a>
-                    <ul id="main-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="">Product</a>
-                            <ul class="sub-menu">
-                                <li><a href="ds_spY.html">Rượu vang Ý</a></li>
-                                <li><a href="ds_spD.html">Rượu vang Đức</a>
+                                <li><a href="">Product</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="ds_spY.html">Rượu vang Ý</a></li>
+                                        <li><a href="ds_spD.html">Rượu vang Đức</a>
 
+                                        </li>
+                                        <li><a href="ds_spP.html">Rượu vang Pháp</a></li>
+                                        <li><a href="ds_spN.html">Rượu Nhật</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="ds_spP.html">Rượu vang Pháp</a></li>
-                                <li><a href="ds_spN.html">Rượu Nhật</a></li>
+                                <li><a href="cart.html">Cart</a></li>
                             </ul>
-                        </li>
-                        <li><a href="cart.html">Cart</a></li>
-                    </ul>
-                </nav>
-
+                        </nav>
+            
+                    </div>
+                </div>
+                
             </div>
-        </div>
 
-    </div>
-
-    <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: -5px;>
+    <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: -5px;">
         <div class="center">
-            <div class="container">
+            <div class="container" style="width: 80%;margin-left:2% ;">
                 <h1 style="color: #1c1c1c; text-align: center">Form Đăng Ký</h1>
                 <p  style="color: #1c1c1c; text-align: center">Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
                 <hr>
@@ -236,11 +289,14 @@
                     <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
                 <label for="psw-repeat"  style="color: #1c1c1c">Nhập Lại Mật Khẩu</label>
                     <input type="password" placeholder="Nhập Lại Mật Khẩu" name="psw-repeat" required>
+                    <label for="psw-repeat"  style="color: #1c1c1c">Số điện thoại</label>
+                    <input type="password" placeholder="Số điện thoại" name="psw-repeat" required>
                 <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Nhớ Đăng Nhập
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;color: #1c1c1c;"> Nhớ Đăng Nhập
                 </label>
+                
                 <div class="clearfix">
-                    <a href="about.html" class="signupbtn">Sign Up</a>
+                    <a href="index.html" class="signupbtn">Sign Up</a>
                 </div>
             </div>
         </div>

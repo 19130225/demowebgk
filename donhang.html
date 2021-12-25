@@ -10,14 +10,39 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
 <body>
+    <div id="showcart" style="margin-top: 400px;margin-right: 200px;z-index: 99;"> 
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+                <th>Xoa</th>
+            </tr>
+            <tbody id="myCart">
+
+            </tbody>
+        </table>
+        <a  href="cart.html" style="text-decoration: none;margin-left: 180px;">Thanh toán >>></a>
+        <button onclick="xoatatca()" style="border-radius: 5px;float: right; margin: 20px;">Xóa all</button>
+    </div>
+    <div class="search_cake undisplay">
+       
+        <input 
+            type="text" id="search_cake_query" placeholder="Enter name of cake !">
+    </div>
   
         <div class="header boxcenter">
             <div class="header--contact padding-content">
                 <div class="header--contact__phone">
-                    <i class="fas fa-phone-alt " style="font-size: 16px;"></i>
+                   
+                    <i class='bx bx-phone-call'style="font-size: 20px;"></i>
                     call us 03-087-0976
                     <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
                     nn@gmail.com
@@ -26,14 +51,14 @@
                 <div class="header--contact__">
                     <a href="">
                         <div class="header--contact__about" >
-                        <a href="" style="margin-right: 6px"><i class="fas fa-user" style="font-size: 16px;"></i></a>
-                           <a href="about.html" class="header--contact__span" style="position: relative; top:0px;"> My Account</a>
+                        <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+                           <a href="dangnhap.html" class="header--contact__span" style="position: relative; top:5px;"> My Account</a>
                         </div>
                     </a>
                     <a href="">
                         <div class="header--contact__careers">
-                            <i class="fas fa-file-alt" style="font-size: 16px;margin-right: 6px;"></i>
-                            <span style="position: relative; top:0px;">Orders</span>
+                            <i class='bx bxs-note' style="font-size: 20px;"></i>
+                            <span style="position: relative; top:-3px;margin-left: 10px;">Orders</span>
                         </div>
                     </a>
                     <a class="header--contact__locations"
@@ -225,7 +250,9 @@
             
                     </nav>
                 </div> -->
+                
                 <div class="wrapper header--navbar_item">
+                    
                     <div class="header1">
                         <nav class="container1">
                             <a href="" id="logo">
@@ -234,7 +261,6 @@
                             <ul id="main-menu">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                               
 
                                 <li><a href="">Product</a>
                                     <ul class="sub-menu">
@@ -319,6 +345,28 @@
                         </li>
                     </div>
                 </div>
+                <div class="row mb thongtin">
+                    <div class="boxtitle" >THÔNG TIN</div>
+                    <div class="boxcontent2 menudoc">
+                        <ul>
+                            <li>
+                                <a href="ds_spY.html"> <i class="fas fa-caret-right"></i>  Hướng dẫn mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="lienhe.html"><i class="fas fa-caret-right"></i>   Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="lienhe-map.html"><i class="fas fa-caret-right"></i>  Gửi câu hỏi tư vấn</a>
+                            </li>
+                            <li>
+                                <a href="lienhe-map.html"><i class="fas fa-caret-right"></i>  Câu hỏi thường gặp</a>
+                            </li>
+                          
+                           
+                        </ul>
+                    </div>
+                   
+                </div>
                 <div class="row mb">
                     <div class="boxtitle">DANH MỤC</div>
                     <div class="boxcontent2 menudoc">
@@ -330,7 +378,7 @@
                                 <a href="ds_spN.html">Rượu Vang Nhật</a>
                             </li>
                             <li>
-                                <a href=ds_spP.html#">Rượu Vang Pháp</a>
+                                <a href="ds_spP.html">Rượu Vang Pháp</a>
                             </li>
                             <li>
                                 <a href="ds_spD.html">Rượu Vang Đức</a>

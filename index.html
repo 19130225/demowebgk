@@ -53,10 +53,11 @@
         <input 
             type="text" id="search_cake_query" placeholder="Enter name of cake !">
     </div>
-  <div class="header">
+    <div class="header boxcenter">
         <div class="header--contact padding-content">
             <div class="header--contact__phone">
-                <i class="fas fa-phone-alt " style="font-size: 16px;"></i>
+               
+                <i class='bx bx-phone-call'style="font-size: 20px;"></i>
                 call us 03-087-0976
                 <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
                 nn@gmail.com
@@ -65,15 +66,15 @@
             <div class="header--contact__">
                 <a href="">
                     <div class="header--contact__about" >
-                    <a href="" style="margin-right: 6px"><i class="fas fa-user" style="font-size: 16px;"></i></a>
-                       <a href="about.html" class="header--contact__span" style="position: relative; top:0px;"> My Account</a>
+                    <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+                       <a href="dangnhap.html" class="header--contact__span" style="position: relative; top:5px;"> My Account</a>
                     </div>
                 </a>
                 <a href="">
-	                <div class="header--contact__careers">
-                        <i class="fas fa-file-alt" style="font-size: 16px;margin-right: 6px;"></i>
-	                    <span style="position: relative; top:0px;">Orders</span>
-	                </div>
+                    <div class="header--contact__careers">
+                        <i class='bx bxs-note' style="font-size: 20px;"></i>
+                        <span style="position: relative; top:-3px;margin-left: 10px;">Orders</span>
+                    </div>
                 </a>
                 <a class="header--contact__locations"
                    href="">
@@ -90,13 +91,15 @@
         <div class="header--logo content-header">
             <div class="header--logo_large">
                 <div class="header--logo_item">
-                    <a href="">
-                        <i class="far fa-clipboard" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                    <a href="lienhe.html">
+                        
+                        <i class='bx bx-notepad' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
                     </a>
                 </div>
                 <div class="header--logo_item">
                     <a href="">
-                        <i class="fas fa-globe-americas "style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
+                        
+                        <i class='bx bx-globe' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
                     </a>
                 </div>
                 <div class="header--logo_logo">
@@ -108,13 +111,15 @@
                 </div>
                 <div class="header--logo_item">
                     <a id="search_icon_button">
-                        <i class="fas fa-search" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                        
+                        <i class='bx bx-search-alt-2'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
                     </a>
                 </div>
                 <div class="giohang header--logo_item" >
                     <!-- <a href="cart/cart.html"><img src="cart/images/cart.png"></a> -->
                     <a onclick="showcart()">
-                        <i class="fas fa-shopping-cart" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                       
+                        <i class='bx bxs-cart-alt'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
                         <span id="countsp">0</span>
                     </a>
                 </div>
@@ -528,11 +533,13 @@
            
 
             <div class="drink-item-wrap all">
-               
-                <div class="drink-item salad-type">
-                    <a href="./ds_spD.html">
+           
+                <div class="drink-item salad-type"  >
+                    <div>
+                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm 20% !</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img " style="height: 300px;">
+                            <div class="item-img " style="height: 300px;" >
                                 <!-- <div class="img-holder bg-img"> -->
                                     <img src="assets/product/y-pd1.jpg" alt="" class="img-holder bg-img">
                                 <!-- </div> -->
@@ -545,7 +552,7 @@
                             </div>
                           
                                 
-                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">550</span></p>
+                             <p>$600 còn $<span style="padding: 0;margin: 10px 0px;color: red;">480</span></p>
                             
                             
                             <div>
@@ -559,17 +566,19 @@
                                
                             
                            
-                                <button>By Now</button>
+                                <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                   
                    
                 </div>
                 
                 <div class="drink-item salad-type">
-                    <a href="./ds_spN.html">
+                    <div>
+                        <span style="position: absolute;background-color: rgb(11, 173, 11);width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Mới</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img " style="height: 300px;">
                                 <!-- <div class="img-holder bg-img"> -->
@@ -597,17 +606,19 @@
                                
                             
                            
-                                <button>By Now</button>
+                                 <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                    
                     
                 </div>
 
                 <div class="drink-item salad-type">
-                    <a href="./ds_spY.html">
+                    <div>
+                        <span style="position: absolute;background-color: rgb(11, 173, 11);width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Mới</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img " style="height: 300px;">
                                
@@ -631,17 +642,19 @@
                                
                             
                            
-                                <button>By Now</button>
+                                 <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                   
                   
                 </div>
                  
                 <div class="drink-item salad-type">
-                    <a href="./ds_spP.html">
+                    <div>
+                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm 20% !</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img " style="height: 300px;">
                                 <!-- <div class="img-holder bg-img"> -->
@@ -656,7 +669,7 @@
                             </div>
                           
                                 
-                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">180</span></p>
+                            <p>$250 còn $<span style="padding: 0;margin: 10px 0px;color: red;">200</span></p>
                             
                             
                             <div>
@@ -669,16 +682,18 @@
                                
                             
                            
-                                <button>By Now</button>
+                                 <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                   
                     
                 </div>
                 <div class="drink-item salad-type">
-                    <a href="./ds_spY.html">
+                    <div>
+                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm giá !</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img " style="height: 300px;">
                                 <!-- <div class="img-holder bg-img"> -->
@@ -706,16 +721,18 @@
                                
                             
                            
-                                <button>By Now</button>
+                                 <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                   
                    
                 </div>
                 <div class="drink-item salad-type">
-                    <a href="./ds_spD.html">
+                    <div>
+                        <span style="position: absolute;background-color: rgb(11, 173, 11);width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Mới</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img " style="height: 300px;">
                                 <!-- <div class="img-holder bg-img"> -->
@@ -743,16 +760,18 @@
                                
                             
                            
-                                <button>By Now</button>
+                                 <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                   
                    
                 </div>
                 <div class="drink-item salad-type">
-                    <a href="./donhang.html">
+                    <div>
+                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm giá !</span>
+                    </div>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img " style="height: 300px;"> 
                                 <!-- <div class="img-holder bg-img"> -->
@@ -780,16 +799,16 @@
                                
                             
                            
-                                <button>By Now</button>
+                                 <a href="sanpham.html"><button>Xem</button></a>
                                 <button onclick="themvaogiohang(this)" 
                                ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                            
                         </div>
-                    </a>
+                   
                     
                 </div>
                 <div class="drink-item salad-type">
-                  <a href="./ds_spN.html">
+                 
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -817,19 +836,19 @@
                            
                         
                        
-                            <button>By Now</button>
+                             <a href="sanpham.html"><button>Xem</button></a>
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                        
                     </div>
-                  </a>
+                  
                 </div>
 
                 
                
 
                 <div class="drink-item lorem-type">
-                  <a href="./ds_spP.html">  <div class="item-wrap bottom-up play-on-scroll">
+                   <div class="item-wrap bottom-up play-on-scroll">
                     <div class="item-img " style="height: 300px;">
                         <!-- <div class="img-holder bg-img"> -->
                             <img src="assets/product/cd-pd1.jpg" alt="" class="img-holder bg-img">
@@ -853,10 +872,13 @@
                         <button>By Now</button>
                         <button onclick="themvaogiohang(this)" 
                        ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                </div></a>
+                </div>
                 </div>
                 <div class="drink-item lorem-type">
-                   <a href="./ds_spY.html"> <div class="item-wrap bottom-up play-on-scroll">
+                    <div>
+                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm giá !</span>
+                    </div>
+                    <div class="item-wrap bottom-up play-on-scroll">
                     <div class="item-img " style="height: 300px;">
                         <!-- <div class="img-holder bg-img"> -->
                             <img src="assets/product/cd-pd2.jpg" alt="" class="img-holder bg-img">
@@ -880,7 +902,7 @@
                         <button>By Now</button>
                         <button onclick="themvaogiohang(this)" 
                        ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                </div></a>
+                </div>
                 </div>
                 <div class="drink-item lorem-type">
                   <a href="./ds_spP.html">
@@ -941,7 +963,9 @@
                    </a>
                 </div>
                 <div class="drink-item lorem-type">
-                   <a href="./ds_spN.html">
+                    <div>
+                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm giá !</span>
+                    </div>
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -967,7 +991,7 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
-                   </a>
+                 
                 </div>
                 <div class="drink-item lorem-type">
                  <a href="./ds_spP.html">
@@ -1822,22 +1846,22 @@
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <img src="assets/55731233_129432651513947_8126695847471313537_n.jpg">
+                                                <img src="assets/home/foodter/banner_1.jpg" style="height: 52px;">
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img src="assets/54429281_123937955370614_5722280565074263255_n.jpg">
+                                                <img src="assets/home/foodter/cong-ty-tnhh-mtv-cai-thung-go-770415.jpg"style="height: 52px;">
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img src="assets/53730445_303350890349016_2105597345185984442_n.jpg">
+                                                <img src="assets/home/foodter/poster-mau10.jpg"style="height: 52px;">
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img src="assets/53898305_294571244773286_1681076972782938727_n.jpg">
+                                                <img src="assets/home/foodter/shop-ruou-anh-linh-770404.jpg"style="height: 52px;">
                                             </a>
                                         </li>
                                         <li>
@@ -1852,7 +1876,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img src="assets/53253055_333998163894397_315975867628131081_n.jpg">
+                                                <img src="assets/home/foodter/tuan-anh-chivas-770396.jpg"style="height: 52px;">
                                             </a>
                                         </li>
                                         <li>
